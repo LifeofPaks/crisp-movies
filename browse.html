@@ -6,38 +6,38 @@
     <link rel="shortcut icon" href="images/title-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>CRISP.PAKS</title>
+    <title>CRISP.PAKS - Browse Movies</title>
 </head>
 <body>
 
-    <!-- ====================================NAVBAR================================= -->
-    <nav class="navbar">
-        <a href="index.html" class="logo">
-            <img src="images/logo-icon1.png" alt="logo" class="logo-icon">
-            <h1 class="logo-text">CRISP<span>.Movies</span></h1>
-        </a>
+        <!-- ====================================NAVBAR================================= -->
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="images/logo-icon1.png" alt="logo" class="logo-icon">
+                <h1 class="logo-text">CRISP<span>.Movies</span></h1>
+            </a>
+    
+            <div class="nav-right">
+                <form class="search-wrapper">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" class="search-input" autocomplete="off" placeholder="Quick search">
+                </form>
+                <ul class="nav-links">
+                    <li><a class="link" href="index.html">Home</a></li>
+                    <li><a class="link fourk" href="4k.html">4K</a></li>
+                    <li><a class="link" href="index.html">Trending</a></li>
+                    <li><a class="link" href="browse.html">Browse Movies</a></li>
+                </ul>
+    
+                <ul class="access">
+                    <li><a class="link login-link" href="#">Login</a></li>
+                    <li><a class="link register-link" href="#">Register</a></li>
+                </ul>
+            </div>
+        </nav>
 
-        <div class="nav-right">
-            <form class="search-wrapper">
-                <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                <input type="text" class="search-input" autocomplete="off" placeholder="Quick search">
-            </form>
-            <ul class="nav-links">
-                <li><a class="link" href="#hero">Home</a></li>
-                <li><a class="link fourk" href="4k.html">4K</a></li>
-                <li><a class="link" href="#latest">Trending</a></li>
-                <li><a class="link" href="browse.html">Browse Movies</a></li>
-            </ul>
 
-            <ul class="access">
-                <li><a class="link login-link" href="#">Login</a></li>
-                <li><a class="link register-link" href="#">Register</a></li>
-            </ul>
-        </div>
-    </nav>
-
-
-    <!-- ==================================MOBILE NAVBAR STARTS======================== -->
+           <!-- ==================================MOBILE NAVBAR STARTS======================== -->
 
     <nav class="navbar mobile">
         <a href="index.html" class="logo">
@@ -123,56 +123,123 @@
      <!-- ==================================MOBILE NAVBAR ENDS======================== -->
 
 
-     <!-- ====================================HERO================================= -->
 
-    <div class="hero" id="hero">
-        <div class="hero-wrapper section">
-            <h2 class="hero-title">
-                Download CRISP movies: HD smallest size
-            </h2>
-    
-            <div class="hero-content">
-                <p class="hero-info">
-                    Welcome to the official CRISP<span class="small">.Movies</span> website. Here you can browse and download YIFY movies in excellent 720p, 1080p, 2160p 4K and 3D quality, all at the smallest file size. CRISP Movies Torrents.
-                </p>
-                <p class="hero-social-wrapper">
-                        <i class="fa-brands fa-telegram"></i> CRISPMovies_UPDATES <span class="line">|</span>
-                        <i class="fa-brands fa-twitter"></i>Upcoming: KNIGHTS OF THE ZODIAC (2023) on June 27. When a headstrong street...
-                </p>
+        <!-- =====================================BROWSE MOVIES SECTION==================== -->
+        <div class="more">
 
-                <div class="more-info-wrapper">
-                    <h3 class="more-info"> <i class="fa-solid fa-star hero-star"></i> Trending Movies</h3>
-                    <h3 class="more-info featured"> <img src="images/signal.png" alt="signal" class="signal"> more featured...</h3>
+            <div class="browse-header section">
+                <div class="section">
+                    <h3 class="browse-title">Search Term:</h3>
+
+                    <form class="browse-more form">
+                        <input type="text" class=" browse-more search-input browse" autocomplete="off">
+                        <button class=" browse  search-icon">Search</button>
+                    </form>
                 </div>
 
+                <div class="search-categories">
+                    <div class="cat-wrapper">
+                        <p class="cat-title">Quality:</p>
+                        <input type="text" class="cat-input" placeholder="All">
+                        <i class="fa-solid fa-caret-up navi-icon up"></i>
+                        <i class="fa-solid fa-caret-down navi-icon down"></i>
+                    </div>
+    
+                    <div class="cat-wrapper">
+                        <p class="cat-title">Genre:</p>
+                        <input type="text" class="cat-input" placeholder="All">
+                         <i class="fa-solid fa-caret-up navi-icon up"></i>
+                        <i class="fa-solid fa-caret-down navi-icon down"></i>
+                    </div>
+    
+                    <div class="cat-wrapper">
+                        <p class="cat-title">Rating:</p>
+                        <input type="text" class="cat-input" placeholder="All">
+                         <i class="fa-solid fa-caret-up navi-icon up"></i>
+                        <i class="fa-solid fa-caret-down navi-icon down"></i>
+                    </div>
+    
+                    <div class="cat-wrapper">
+                        <p class="cat-title">Year:</p>
+                        <input type="text" class="cat-input" placeholder="All">
+                         <i class="fa-solid fa-caret-up navi-icon up"></i>
+                        <i class="fa-solid fa-caret-down navi-icon down"></i>
+                    </div>
+    
+                    <div class="cat-wrapper">
+                        <p class="cat-title">Language:</p>
+                        <input type="text" class="cat-input" placeholder="All">
+                         <i class="fa-solid fa-caret-up navi-icon up"></i>
+                        <i class="fa-solid fa-caret-down navi-icon down"></i>
+                    </div>
+    
+                    <div class="cat-wrapper">
+                        <p class="cat-title">Order By:</p>
+                        <input type="text" class="cat-input" placeholder="All">
+                         <i class="fa-solid fa-caret-up navi-icon up"></i>
+                        <i class="fa-solid fa-caret-down navi-icon down"></i>
+                    </div>
+                </div>
             </div>
 
-            <div class="trending section">
+            <div class="page-wrapper section">
+                <div class="box">
+                    <h3 class="page-title">CRISP Movies</h3>
+
+                    <div class="page-box">
+                        <p class="next selected">1</p>
+                        <p class="next">2</p>
+                        <p class="next">3</p>
+                        <p class="next">4</p>
+                        <p class="next">5</p>
+                        <p class="next">6</p>
+                        <p class="next">7</p>
+                        <p class="next">8</p>
+                        <p class="next">...</p>
+                        <p class="next current-page">Page 1</p>
+                        <p class="next next-page">Next <i class="fa-solid fa-angles-right"></i></p>
+                    </div>
+                </div>
+               
+            </div>
+
+    
+            <div class="section">
+                <div class="browse-more-movies section">
+                        
+                </div>
                 
             </div>
 
+            <div class="page-wrapper section">
+                <div class="box">
+
+                    <div class="page-box">
+                        <p class="next selected">1</p>
+                        <p class="next">2</p>
+                        <p class="next">3</p>
+                        <p class="next">4</p>
+                        <p class="next">5</p>
+                        <p class="next">6</p>
+                        <p class="next">7</p>
+                        <p class="next">8</p>
+                        <p class="next">...</p>
+                        <p class="next current-page">Page 1</p>
+                        <p class="next next-page">Next <i class="fa-solid fa-angles-right"></i></p>
+                    </div>
+                </div>
+               
+            </div>
+            
         </div>
-    </div>
 
-    <!-- ======================================MAIN SECTION======================================= -->
+        <!-- ==================================CHAT BOT======================================= -->
 
-<main class="main section" id="latest">
-    <div class="main-title">
-        <h4 class="heading-text">Latest CRISP Movies Torrents</h4>
-        <p class="browse-text">Browse All</p>
-    </div>
+        <div class="chat-bot">
+            <i class="fa-solid fa-comment-dots bot-icon"></i>
+            <p class="bot-text">Ideas and feedbacks</p>
+        </div>
 
-    <div class="latest section">
-      
-    </div>
-</main>
-
-<!-- ==================================CHAT BOT======================================= -->
-
-<div class="chat-bot">
-    <i class="fa-solid fa-comment-dots bot-icon"></i>
-    <p class="bot-text">Ideas and feedbacks</p>
-</div>
 <!-- ========================================FOOTER==================================== -->
 
 
@@ -269,7 +336,7 @@
 </footer>
 
 
-<!-- ===================================LOGIN SECTION============================== -->
+<!-- ========================================LOGIN SECTION==================================== -->
     <div class="login-container"></div>
 
 <div class="login-box">
@@ -331,10 +398,7 @@
 
     <a href="#" class="forgot">Forgot your password?</a>
 </div>
-
-    <script src="login.js"></script>
-    <script src="script.js"></script>
+        <script src="login.js"></script>
+        <script src="browse.js"></script> 
 </body>
 </html>
-
-
