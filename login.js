@@ -105,6 +105,14 @@ window.addEventListener('scroll', () =>{
 // =============================MOBILE SEARCH==============================
     mobileSearch.addEventListener('click', ()=>{
         mobileHeader.classList.toggle('active')
+        mobileSearchInput.focus()
+    })
+
+
+    window.addEventListener('scroll', ()=>{
+        if(mobileHeader.classList.contains('active')){
+            mobileHeader.classList.remove('active')
+        }
     })
 
 
@@ -117,4 +125,6 @@ window.addEventListener('scroll', () =>{
         getMovies(SEARCHAPI + searchTerm)
         mobileSearchInput.value = ''
     }
+
+    mobileHeader.classList.remove('active')
   })
