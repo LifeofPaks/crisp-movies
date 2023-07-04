@@ -41,6 +41,7 @@ const mobileSearchInput = document.querySelector('.mobile .search-input')
         loginContainers.classList.remove('active')
             registers.classList.remove('active')
             signIns.classList.remove('active')
+            forgotPassword.classList.remove('active')
     })
 
 // ========================FORM BORDERS ON CLICK========================================
